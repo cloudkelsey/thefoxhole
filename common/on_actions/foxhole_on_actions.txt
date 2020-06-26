@@ -1,0 +1,51 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { # If competitive game rule is selected and Finland is AI at the start of the game
+					FIN = { is_ai = yes }
+					foxhole_is_in_competitive_mode = yes
+				}
+				FIN = { swap_ideas = { add_idea = FIN_enhanced_sisu remove_idea = sisu } }
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = { # If the declared war is the SCW and the competitive game rule is selected
+					SOV = { is_ai = no }
+					foxhole_is_in_competitive_mode = yes
+					OR = {
+						AND = {
+							tag = SPA
+							FROM = { tag = SPD }
+						}
+						AND = {
+							tag = SPD
+							FROM = { tag = SPA }
+						}
+					}
+				} 
+				SOV = { add_threat = 1 } # Designed to offset no Soviet volunteers to Spain
+			}
+		}
+	}
+
+	on_annex = {
+		effect = {
+			if = {
+				limit = { # Needs testing to see whether or not this will fire
+					original_tag = SPR
+					FROM = { original_tag = SPR }
+					OR = {
+						has_war = no
+						NOT = { any_enemy_country = { original_tag = SPR } }
+					}
+				}
+				every_state = { limit = { is_on_continent = europe CONTROLLER = { original_tag = SPR } } add_core_of = ROOT } # Add core of annexer to every European state controlled by any Spain
+			}
+		}
+	}
+}

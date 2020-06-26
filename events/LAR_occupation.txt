@@ -7,7 +7,7 @@ add_namespace = occupied_countries
 	# title = occupied_countries.1.title
 	# desc = occupied_countries.1.desc
 	
-	todo lar
+	#todo lar
 	# picture = GFX_report_event_canadian_soldiers
 	
 	# is_triggered_only = yes
@@ -40,7 +40,7 @@ add_namespace = occupied_countries
 
 	# option = {
 		# name = occupied_countries.1.b
-		do nothing
+		#do nothing
 	# }
 # }
 
