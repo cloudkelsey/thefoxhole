@@ -4,14 +4,16 @@ oob = "FRA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"
+		set_war_support = 0.1
 	else = {
 		set_naval_oob = "FRA_1936_naval_legacy"
+		set_war_support = 0.15
 	}
 }
 
 set_research_slots = 3
 set_stability = 0.5
-set_war_support = 0.1
+
 
 # Starting tech
 set_technology = {
@@ -26,8 +28,8 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
-	improved_light_tank = 1
 	basic_heavy_tank = 1
+	improved_light_tank = 1
 	early_fighter = 1
 	naval_bomber1 = 1
 	cv_early_fighter = 1
@@ -72,11 +74,13 @@ if = {
 		basic_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		basic_battery = 1
+		basic_heavy_battery = 1
 		basic_light_battery = 1
 		basic_medium_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		basic_secondary_battery = 1
+		improved_secondary_battery = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 	}
@@ -251,6 +255,17 @@ create_country_leader = {
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
 	ideology = socialism
+	traits = {
+		stout_defender
+	}
+}
+
+create_country_leader = {
+	name = "Pierre Laval"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = GFX_portrait_fra_pierre_laval
+	expire = "1965.1.1"
+	ideology = liberalism
 	traits = {
 		stout_defender
 	}
