@@ -96,7 +96,7 @@ political_actions = {
 		cost = 100
 
 		complete_effect = {
-
+			set_country_flag = improved_worker_conditions_finished
 		}
 
 		ai_will_do = {
@@ -111,6 +111,30 @@ political_actions = {
 				NOT = { has_global_flag = spanish_civil_war }
 			}
 		}
+	}
+
+	improved_worker_conditions_cooldown = {
+		icon = generic_industry
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		visible = {
+			has_country_flag = improved_worker_conditions_finished
+		}
+
+		activation = {
+			has_country_flag = improved_worker_conditions_finished
+		}
+
+		timeout_effect = {
+			clr_country_flag = improved_worker_conditions_finished
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 719
 	}
 
 	promises_of_peace = {
