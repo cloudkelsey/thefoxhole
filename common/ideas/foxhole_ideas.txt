@@ -12,5 +12,50 @@ ideas = {
 				mobilization_speed = 0.5
 			}
 		}
+
+		#limits to some AIs to avoid lag
+		AI_control = {
+			picture = FRA_matignon_agreements
+			cancel = {
+				OR = {
+					has_war = yes
+					is_ai = no
+					is_puppet = yes
+					any_neighbor_country = {
+						is_ai = no
+					}
+					has_game_rule = {
+						rule = foxhole_competitive_setup_mode
+						option = COMPETITIVE
+					}
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = -0.75
+				industrial_capacity_factory = -0.75
+				political_power_gain = -0.75
+			}
+		}
+
+		#alternate version of the above for historical scenarios
+		AI_hist_control = {
+			picture = FRA_matignon_agreements
+			cancel = {
+				OR = {
+					is_ai = no
+					has_game_rule = {
+						rule = foxhole_competitive_setup_mode
+						option = NORMAL
+					}
+					is_puppet = yes
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = -1
+				industrial_capacity_factory = -1
+			}
+		}
 	}
 }
