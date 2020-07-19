@@ -119,7 +119,7 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
-}
+	}
 	#give_guarantee = YUG
 	give_guarantee = ROM
 }
