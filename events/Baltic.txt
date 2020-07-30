@@ -43,13 +43,13 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 1
-				OR = {
-					is_historical_focus_on = no
-					any_other_country = {
-						is_major = yes
-						is_in_faction_with = EST
-					}
+				#OR = {
+					#is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = EST
 				}
+				#}
 			}
 			modifier = {
 				add = 5
@@ -111,13 +111,13 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 1
-				OR = {
-					is_historical_focus_on = no
-					any_other_country = {
-						is_major = yes
-						is_in_faction_with = LAT
-					}
+				#OR = {
+					#is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = LAT
 				}
+				#}
 			}
 			modifier = {
 				add = 5
@@ -179,13 +179,13 @@ country_event = {
 			base = 0
 			modifier = {
 				add = 1
-				OR = {
-					is_historical_focus_on = no
-					any_other_country = {
-						is_major = yes
-						is_in_faction_with = LIT
-					}
+				#OR = {
+					#is_historical_focus_on = no
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = LIT
 				}
+				#}
 			}
 			modifier = {
 				add = 5
