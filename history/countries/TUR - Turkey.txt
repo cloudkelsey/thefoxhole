@@ -38,6 +38,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
+	early_bomber = 1
 	CAS1 = 1
 	gwtank = 1
 	basic_light_tank = 1
@@ -396,10 +397,9 @@ set_popularities = {
 	neutrality = 94
 }
 
-set_popularities = {
-	democratic = 6
-	neutrality = 94
-}
+set_convoys = 20
+set_stability = 0.5
+set_war_support = 0.3
 
 
 if = {
