@@ -1,4 +1,4 @@
-version="1.10.2"
+version="1.10.3"
 tags={
 	"Balance"
 	"Fixes"
@@ -6,5 +6,5 @@ tags={
 }
 picture="thumbnail.png"
 name="[DEV]The Foxhole Mod"
-supported_version="1.10.2"
+supported_version="1.10.3"
 remote_file_id="2268239599"
