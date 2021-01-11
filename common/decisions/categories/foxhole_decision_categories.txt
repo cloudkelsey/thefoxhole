@@ -1,0 +1,6 @@
+foxhole_debug_decisions_category = {
+	icon = generic_research
+	visible = {
+		is_debug = yes
+	}
+}
