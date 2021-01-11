@@ -34,6 +34,10 @@
  FOXHOLE_ADVANCED_SUBMARINES_ENABLED:0 "Enabled"
  FOXHOLE_ADVANCED_SUBMARINES_ENABLED_DESC:0 "Allow the research of submarine IV and snorkel II."
 
+ FOXHOLE_NAVAL_TREATY:0 "Naval Treaties"
+ FOXHOLE_NAVAL_TREATY_ENABLED:0 "Default"
+ FOXHOLE_NAVAL_TREATY_DISABLED:0 "Disabled"
+ FOXHOLE_NAVAL_TREATY_DISABLED_DESC:0 "A couple days after game start the naval treaties will be removed."
 
  FIN_enhanced_sisu:0 "Enhanced Sisu"
  improved_worker_conditions_cooldown:0 "Improved Worker Conditions Cooldown"

@@ -74,3 +74,17 @@ foxhole_advanced_submarines = {
 		desc = "FOXHOLE_ADVANCED_SUBMARINES_ENABLED_DESC"
 	}
 }
+
+foxhole_naval_treaty = {
+	name = "FOXHOLE_NAVAL_TREATY"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = { #don't touch the naval treaties
+		name = ENABLED
+		text = "FOXHOLE_NAVAL_TREATY_ENABLED"
+	}
+	option = { #disband the naval treaties
+		name = DISABLED
+		text = "FOXHOLE_NAVAL_TREATY_DISABLED"
+		text = "FOXHOLE_NAVAL_TREATY_DISABLED_DESC"
+	}
+}
