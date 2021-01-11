@@ -4,3 +4,73 @@ foxhole_competitive_setup_mode = {
 	option = { name = NORMAL text = "FOXHOLE_NORMAL_MODE" }
 	option = { name = COMPETITIVE text = "FOXHOLE_COMPETITIVE_MODE" }
 }
+
+foxhole_advanced_planes = {
+	name = "FOXHOLE_ADVANCED_PLANES"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = { #disable all planes III and above
+		name = DISABLED
+		text = "FOXHOLE_ADVANCED_PLANES_DISABLED"
+		desc = "FOXHOLE_ADVANCED_PLANES_DISABLED_DESC"
+	}
+	option = { #disable only jets
+		name = NO_JETS
+		text = "FOXHOLE_ADVANCED_PLANES_NO_JETS"
+		desc = "FOXHOLE_ADVANCED_PLANES_NO_JETS_DESC"
+	}
+	option = { #allow all planes
+		name = ENABLED
+		text = "FOXHOLE_ADVANCED_PLANES_ENABLED"
+		desc = "FOXHOLE_ADVANCED_PLANES_ENABLED_DESC"
+	}
+}
+
+foxhole_strategic_bombers = {
+	name = "FOXHOLE_STRATEGIC_BOMBERS"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = { #only allow strats I
+		name = RESTRICTED
+		text = "FOXHOLE_STRATEGIC_BOMBERS_RESTRICTED"
+		desc = "FOXHOLE_STRATEGIC_BOMBERS_RESTRICTED_DESC"
+	}
+	option = { #block all strats
+		name = DISABLED
+		text = "FOXHOLE_STRATEGIC_BOMBERS_DISABLED"
+		desc = "FOXHOLE_STRATEGIC_BOMBERS_DISABLED_DESC"
+	}
+	option = { #allow all strats (may be restricted by the FOXHOLE_ADVANCED_PLANES rule)
+		name = ENABLED
+		text = "FOXHOLE_STRATEGIC_BOMBERS_ENABLED"
+		desc = "FOXHOLE_STRATEGIC_BOMBERS_ENABLED_DESC"
+	}
+}
+
+foxhole_advanced_tanks = {
+	name = "FOXHOLE_ADVANCED_TANKS"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = { #disable modern tanks
+		name = DISABLED
+		text = "FOXHOLE_ADVANCED_TANKS_DISABLED"
+		desc = "FOXHOLE_ADVANCED_TANKS_DISABLED_DESC"
+	}
+	option = { #allow modern tanks
+		name = ENABLED
+		text = "FOXHOLE_ADVANCED_TANKS_ENABLED"
+		desc = "FOXHOLE_ADVANCED_TANKS_ENABLED_DESC"
+	}
+}
+
+foxhole_advanced_submarines = {
+	name = "FOXHOLE_ADVANCED_SUBMARINES"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = { #disable sub IV and snorkel II
+		name = DISABLED
+		text = "FOXHOLE_ADVANCED_SUBMARINES_DISABLED"
+		desc = "FOXHOLE_ADVANCED_SUBMARINES_DISABLED_DESC"
+	}
+	option = { #allow sub IV and snorkel II
+		name = ENABLED
+		text = "FOXHOLE_ADVANCED_SUBMARINES_ENABLED"
+		desc = "FOXHOLE_ADVANCED_SUBMARINES_ENABLED_DESC"
+	}
+}
