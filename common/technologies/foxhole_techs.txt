@@ -1,0 +1,38 @@
+#custom techs for game rules
+technologies = {
+    foxhole_tech_planes_III = {
+        allow = {
+            always = no
+        }
+    }
+
+    foxhole_tech_jets = {
+        allow = {
+            always = no
+        }
+    }
+
+    foxhole_tech_strategic_bomber_I = {
+        allow = {
+            always = no
+        }
+    }
+
+    foxhole_tech_strategic_bombers = {
+        allow = {
+            always = no
+        }
+    }
+
+    foxhole_tech_modern_tanks = {
+        allow = {
+            always = no
+        }
+    }
+
+    foxhole_tech_advanced_submarines = {
+        allow = {
+            always = no
+        }
+    }
+}
