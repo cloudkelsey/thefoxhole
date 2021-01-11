@@ -85,6 +85,6 @@ foxhole_naval_treaty = {
 	option = { #disband the naval treaties
 		name = DISABLED
 		text = "FOXHOLE_NAVAL_TREATY_DISABLED"
-		text = "FOXHOLE_NAVAL_TREATY_DISABLED_DESC"
+		desc = "FOXHOLE_NAVAL_TREATY_DISABLED_DESC"
 	}
 }
