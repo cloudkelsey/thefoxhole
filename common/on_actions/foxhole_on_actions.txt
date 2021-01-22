@@ -3,9 +3,17 @@ on_actions = {
 		effect = {
 			if = {
 				limit = { # If competitive game rule is selected and Finland is AI at the start of the game
-					FIN = { is_ai = yes foxhole_is_in_competitive_mode = yes }
+					FIN = {
+						is_ai = yes
+						foxhole_is_in_competitive_mode = yes
+					}
 				}
-				FIN = { swap_ideas = { add_idea = FIN_enhanced_sisu remove_idea = sisu } }
+				FIN = {
+					swap_ideas = {
+						add_idea = FIN_enhanced_sisu
+						remove_idea = sisu
+					}
+				}
 			}
 
 			#check for advanced planes rule
