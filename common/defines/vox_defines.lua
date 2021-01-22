@@ -1,9 +1,17 @@
+--prevent ai from joining factions when declared upon (only works in specific conditions)
 NDefines.NAI.DIPLOMACY_FACTION_WAR_RELUCTANCE = -100000
-NDefines.MAX_RECRUITED_OPERATIVES = 5
+
+--limit operative count to 5
+-- THIS HAS NO EFFECT, FIND REPLACEMENT
+--NDefines.MAX_RECRUITED_OPERATIVES = 5
+
+--increase default research slot count to 3
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
 
+--increase default special forces cap to 56 (regardless of number of non special forces bigades)
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 56
 
+--disable xp cost for template edition
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0
@@ -13,18 +21,22 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 
-NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
-
-NDefines.NAir.NAVAL_MINES_PLANTING_SPEED_MULT = 0
-NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0
-
 NDefines.NAI.DIVISION_UPGRADE_MIN_XP = 0
 NDefines.NAI.DIVISION_CREATE_MIN_XP = 0
 
+--instant deploy air wings
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
+
+--disable minelaying
+NDefines.NAir.NAVAL_MINES_PLANTING_SPEED_MULT = 0
+NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0
+
+--disable propaganda
 NDefines.NOperatives.OPERATIVE_BASE_PROPAGANDA_POWER = 0.0000
 
 --should disable random ai guarantees on minors
 NDefines.NAI.TENSION_MIN_FOR_GUARANTEE_VS_MINOR = 101
+
 --increased base guarantee cost so as to further discourage guarantees from ai
 NDefines.NDiplomacy.GUARANTEE_COST = 50
 
