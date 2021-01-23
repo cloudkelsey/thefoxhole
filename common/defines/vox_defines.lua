@@ -37,6 +37,9 @@ NDefines.NOperatives.OPERATIVE_BASE_PROPAGANDA_POWER = 0.0000
 --should disable random ai guarantees on minors
 NDefines.NAI.TENSION_MIN_FOR_GUARANTEE_VS_MINOR = 101
 
+--reduced base guarantee cost to ease the use of the guarantee mechanic in role play scenarios
+NDefines.NDiplomacy.GUARANTEE_COST = 10
+
 -- graphics
 NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
