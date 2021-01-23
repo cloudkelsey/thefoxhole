@@ -4099,6 +4099,17 @@ country_event = {
 		hidden_effect = {
 			news_event = { hours = 1 id = news.204 }
 		}
+		if = {
+			limit = {
+				OR = {
+					foxhole_is_in_competitive_mode = yes
+					is_historical_focus_on = yes
+				}
+			}
+			ENG = {
+				give_guarantee = POL
+			}
+		}
 		effect_tooltip = {
 			GER = {
 				declare_war_on = {
