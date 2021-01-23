@@ -41,6 +41,10 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 }
 
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
+	ROOT = {
+		is_ai = no
+	}
+	
 	if = {
 		limit = {
 			has_game_rule = {
