@@ -39,6 +39,11 @@
  FOXHOLE_NAVAL_TREATY_DISABLED:0 "Disabled"
  FOXHOLE_NAVAL_TREATY_DISABLED_DESC:0 "A couple days after game start the naval treaties will be removed."
 
+ FOXHOLE_AI_GUARANTEES:0 "AI guarantees"
+ FOXHOLE_AI_GUARANTEES_DISABLED:0 "Default"
+ FOXHOLE_AI_GUARANTEES_ENABLED:0 "Enabled"
+FOXHOLE_AI_GUARANTEES_ENABLED_DESC:0 "Allow the AI to guarantee the intdependance of other countries."
+
  FIN_enhanced_sisu:0 "Enhanced Sisu"
  improved_worker_conditions_cooldown:0 "Improved Worker Conditions Cooldown"
  AI_control:0 "AI Control"

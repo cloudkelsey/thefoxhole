@@ -41,8 +41,16 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 }
 
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
-	ROOT = {
-		is_ai = no
+	if = { # block ai from guaranteeing depending on the game rule
+		limit = {
+			has_game_rule = {
+				rule = foxhole_ai_guarantees
+				option = DISABLED
+			}
+		}
+		ROOT = {
+			is_ai = no
+		}
 	}
 	
 	if = {

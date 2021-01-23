@@ -88,3 +88,17 @@ foxhole_naval_treaty = {
 		desc = "FOXHOLE_NAVAL_TREATY_DISABLED_DESC"
 	}
 }
+
+foxhole_ai_guarantees = {
+	name = "FOXHOLE_AI_GUARANTEES"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = { #prevent the ai from guaranteeing other countries
+		name = DISABLED
+		text = "FOXHOLE_AI_GUARANTEES_DISABLED"
+	}
+	option = { #allow the ai to guarantee other countries
+		name = ENABLED
+		text = "FOXHOLE_AI_GUARANTEES_ENABLED"
+		desc = "FOXHOLE_AI_GUARANTEES_ENABLED_DESC"
+	}
+}
