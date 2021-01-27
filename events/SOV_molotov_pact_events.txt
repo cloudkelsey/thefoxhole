@@ -1,0 +1,81 @@
+
+add_namespace = foxhole_SOV_demands
+
+#event received by target countries
+country_event = {
+    id = foxhole_SOV_demands.0
+    title = foxhole_SOV_demands.0.t
+    desc = foxhole_SOV_demands.0.d
+    picture = GFX_report_event_soviet_soldiers
+
+    is_triggered_only = yes
+
+    option = { #conceede
+        name = foxhole_SOV_demands.0.a
+
+        ai_chance = {
+            base = 1
+        }
+
+        every_owned_state = {
+            limit = {
+                is_core_of = THIS
+                is_claimed_by = SOV
+            }
+            SOV = {
+                transfer_state = PREV
+            }
+        }
+
+        if = { #if germany owns konigsberg, transfer memel to germany otherwise, transfer it to soviet
+            limit = {
+                tag = LIT
+                owns_state = 188
+            }
+            GER = {
+                transfer_state = 188
+            }
+        }
+
+        SOV = {
+            country_event = {
+                id = foxhole_SOV_demands.1
+                days = 1
+            }
+        }
+    }
+
+    option = { #refuse
+        ai_chance = {
+            base = 0
+        }
+        name = foxhole_SOV_demands.0.b
+    }
+}
+
+#event for country conceeding
+country_event = {
+    id = foxhole_SOV_demands.1
+    title = foxhole_SOV_demands.1.t
+    desc = foxhole_SOV_demands.1.d
+    picture = GFX_report_event_soviet_invasion_map
+
+    is_triggered_only = yes
+
+    option = { #great
+        name = foxhole_SOV_demands.1.a
+    }
+}
+
+#event for country refusing
+country_event = {
+    id = foxhole_SOV_demands.2
+    title = foxhole_SOV_demands.2.t
+    desc = foxhole_SOV_demands.2.d
+    picture = GFX_report_event_generic_read_write
+
+    is_triggered_only = yes
+    option = { #great
+        name = foxhole_SOV_demands.1.a
+    }
+}
