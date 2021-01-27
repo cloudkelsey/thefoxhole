@@ -42,8 +42,14 @@
  FOXHOLE_AI_GUARANTEES:0 "AI guarantees"
  FOXHOLE_AI_GUARANTEES_DISABLED:0 "Default"
  FOXHOLE_AI_GUARANTEES_ENABLED:0 "Enabled"
-FOXHOLE_AI_GUARANTEES_ENABLED_DESC:0 "Allow the AI to guarantee the intdependance of other countries."
+ FOXHOLE_AI_GUARANTEES_ENABLED_DESC:0 "Allow the AI to guarantee the independance of other countries."
 
+#events
+ foxhole_SOV_demands.1.t:0 "[From.GetName] Submits"
+
+#decisions
+
+#ideas
  FIN_enhanced_sisu:0 "Enhanced Sisu"
  improved_worker_conditions_cooldown:0 "Improved Worker Conditions Cooldown"
  AI_control:0 "AI Control"
