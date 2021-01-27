@@ -45,13 +45,32 @@
  FOXHOLE_AI_GUARANTEES_ENABLED_DESC:0 "Allow the AI to guarantee the independance of other countries."
 
 #events
+ foxhole_SOV_demands.0.t:0 "Soviet Ultimatum"
+ foxhole_SOV_demands.0.d:0 "The Soviets are massing their troops outside our border and are demanding that we surrender their claims."
+ foxhole_SOV_demands.0.a:0 "It is hopeless."
+ foxhole_SOV_demands.0.b:0 "They will have to take our land by force!"
+
  foxhole_SOV_demands.1.t:0 "[From.GetName] Submits"
+ foxhole_SOV_demands.1.d:0 "[From.GetName] has surrendered our claims."
+ foxhole_SOV_demands.1.a:0 "Excellent."
+
+ foxhole_SOV_demands.2.t:0 "[From.GetName] Refuses our offer"
+ foxhole_SOV_demands.2.d:0 "[From.GetName] has refused to surrendered our claims."
+ foxhole_SOV_demands.2.a:0 "They will pay the price for their lack of vision!"
 
 #decisions
+ foxhole_soviet_molotov_claims_category:0 "Molotov Ribbentrop Pact"
+
+ foxhole_demand_estonia:0 "Demand Estonia"
+ foxhole_demand_latvia:0 "Demand Latvia"
+ foxhole_demand_lithuania:0 "Demand Lithuania"
+ foxhole_demand_bessarabia:0 "Demand Bessarabia"
+ foxhole_demand_finland:0 "Demand our Finish claims"
+
+ improved_worker_conditions_cooldown:0 "Improved Worker Conditions Cooldown"
 
 #ideas
  FIN_enhanced_sisu:0 "Enhanced Sisu"
- improved_worker_conditions_cooldown:0 "Improved Worker Conditions Cooldown"
  AI_control:0 "AI Control"
  AI_control_desc:0 "Reduces resources available to some countries, to avoid AI division spam causing lag and being generally annoying. It is removed if any of the following are true; the country is a player, the country is at war, the country is neighbouring a player, or the country is a puppet. §RIT MAY TAKE UP TO A FULL IN-GAME DAY TO BE REMOVED§"
  AI_hist_control:0 "AI Control Historical"
