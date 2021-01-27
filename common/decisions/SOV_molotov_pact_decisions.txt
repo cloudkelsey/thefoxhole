@@ -4,7 +4,7 @@ foxhole_soviet_molotov_claims_category = {
         cost = 25
         fire_only_once = yes
 
-        visible = {
+        visible = { #check if any soviet claims are not owned by soviets yet
             any_state = {
                 is_core_of = EST
                 is_claimed_by = SOV
@@ -14,9 +14,9 @@ foxhole_soviet_molotov_claims_category = {
             }
         }
 
-        days_remove = 25
+        days_remove = 25 #more than enough for the demands events to time out
 
-        cancel_trigger = {
+        cancel_trigger = { #cancel once every soviet claim has been given back
             hidden_trigger = {
                 NOT = {
                     any_other_country = {
@@ -32,7 +32,7 @@ foxhole_soviet_molotov_claims_category = {
             }
         }
 
-        remove_effect = {
+        remove_effect = { #if there are still claims not given back, generate war goals on all countries who still hold soviet claims
             every_other_country = {
                 limit = {
                     any_owned_state = {
@@ -49,7 +49,7 @@ foxhole_soviet_molotov_claims_category = {
             }
         }
 
-        complete_effect = {
+        complete_effect = { #trigger the demands event for every country that holds soviet claims
             every_other_country = {
                 limit = {
                     any_owned_state = {
