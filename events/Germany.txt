@@ -731,14 +731,29 @@ country_event = {
 		name = germany.20.a
 		ai_chance = { factor = 80 }
 		add_named_threat = { threat = 2 name = GER_second_vienna_award_HUN_north }
-		HUN = {
-			set_country_flag = GER_second_vienna_award_HUN_north
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_north } 
+
+		if = {
+			limit = {
+				foxhole_is_in_competitive_mode = yes #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
+			}
+			HUN = { 
+				transfer_state = 76
+			}
+			hidden_effect = {
+				country_event = { days = 1 id = news.15 }
+			}
+			else = {
+				HUN = {
+					set_country_flag = GER_second_vienna_award_HUN_north
+					add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_north } 
+				}
+				ROM = {
+					add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_north }
+					country_event = { id = romania.2 }
+				}
+			}
 		}
-		ROM = {
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_north }
-			country_event = { id = romania.2 }
-		}
+		
 	}
 	option = { # Give Hungary all of Transylvania
 		trigger = {
@@ -757,13 +772,29 @@ country_event = {
 			}
 		}
 		add_named_threat = { threat = 3 name = GER_second_vienna_award_HUN_all }
-		HUN = { 
-			set_country_flag = GER_second_vienna_award_HUN_all
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_all } 
-		}
-		ROM = {
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_all }
-			country_event = { id = romania.3 }
+
+		if = {
+			limit = {
+				foxhole_is_in_competitive_mode = yes #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
+			}
+			HUN = { 
+				transfer_state = 76
+				transfer_state = 83
+				transfer_state = 84
+			}
+			hidden_effect = {
+				country_event = { days = 1 id = news.16 }
+			}
+			else = {
+				HUN = { 
+					set_country_flag = GER_second_vienna_award_HUN_all
+					add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_HUN_all } 
+				}
+				ROM = {
+					add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_ROM_all }
+					country_event = { id = romania.3 }
+				}
+			}
 		}
 	}
 	option = { # Give Hungary nothing
@@ -775,13 +806,19 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		ROM = {
-			country_event = { id = romania.4 }
-		}
-		HUN = {
-			set_country_flag = GER_second_vienna_award_noland
-			add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_noland }
-			country_event = { id = hungary.1 }
+
+		if = {
+			limit = {
+				foxhole_is_in_competitive_mode = no #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
+			}
+			ROM = {
+				country_event = { id = romania.4 }
+			}
+			HUN = {
+				set_country_flag = GER_second_vienna_award_noland
+				add_opinion_modifier = { target = GER modifier = GER_second_vienna_award_noland }
+				country_event = { id = hungary.1 }
+			}
 		}
 	}
 }
