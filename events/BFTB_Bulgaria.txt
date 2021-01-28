@@ -7341,6 +7341,13 @@ country_event = {
 					}
 				}
 			}
+			modifier = {
+				add = 100
+				factor = 50
+				BUL = {
+					is_ai = no
+				}
+			}
 		}
 
 		custom_effect_tooltip = GAME_OVER_TT
@@ -7526,6 +7533,12 @@ country_event = {
 				strength_ratio = {
 					tag = FROM
 					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					is_ai = no
 				}
 			}
 		}
