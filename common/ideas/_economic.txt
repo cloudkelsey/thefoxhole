@@ -252,6 +252,12 @@ ideas = {
 					has_government = communism
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
+						has_war = no
+						has_war_support > 0.5
+						has_stability > 0.5
+						threat > 0.2
+					}
+					AND = {
 						has_war = yes
 						any_enemy_country = {
 							ic_ratio = { 

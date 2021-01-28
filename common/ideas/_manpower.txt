@@ -151,6 +151,12 @@ ideas = {
 					has_government = fascism
 					has_government = communism
 					AND = {
+						has_war = no
+						has_war_support > 0.5
+						has_stability > 0.5
+						threat > 0.2
+					}
+					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.5
 						#any_enemy_country = {
@@ -159,7 +165,7 @@ ideas = {
 						#		ratio > 0.5
 						#	}
 						#}
-					}					
+					}
 				}
 				has_war_support > 0.2
 				#Special rules AST in TFV
