@@ -1320,8 +1320,11 @@ technologies = {
 	
 	main_battle_tank = { #E-50
 
-		dependencies = {
-			foxhole_tech_modern_tanks = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_TANKS
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -1372,8 +1375,11 @@ technologies = {
 	
 	modern_td = {
 
-		dependencies = {
-			foxhole_tech_modern_tanks = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_TANKS
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -1413,8 +1419,11 @@ technologies = {
 	
 	modern_art = {
 
-		dependencies = {
-			foxhole_tech_modern_tanks = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_TANKS
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -1454,8 +1463,11 @@ technologies = {
 	
 	modern_spaa = {
 
-		dependencies = {
-			foxhole_tech_modern_tanks = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_TANKS
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {

@@ -313,8 +313,17 @@ technologies = {
 	
 	fighter3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -376,8 +385,17 @@ technologies = {
 	
 	cv_fighter3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -421,8 +439,11 @@ technologies = {
 	
 	jet_fighter1 = {
 
-		dependencies = {
-			foxhole_tech_jets = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_PLANES
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -466,8 +487,11 @@ technologies = {
 	
 	jet_fighter2 = {
 
-		dependencies = {
-			foxhole_tech_jets = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_PLANES
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -491,7 +515,6 @@ technologies = {
 			factor = 1
 		}
 	}
-	
 	
 	CAS1 = {
 
@@ -700,8 +723,17 @@ technologies = {
 	
 	CAS3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -760,8 +792,17 @@ technologies = {
 	
 	cv_CAS3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -1011,8 +1052,17 @@ technologies = {
 	
 	naval_bomber3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -1072,8 +1122,17 @@ technologies = {
 	
 	cv_naval_bomber3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -1213,8 +1272,17 @@ technologies = {
 	
 	heavy_fighter3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -1438,8 +1506,17 @@ technologies = {
 	
 	tactical_bomber3 = {
 
-		dependencies = {
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = NO_JETS
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -1489,8 +1566,11 @@ technologies = {
 	
 	jet_tactical_bomber1 = {
 
-		dependencies = {
-			foxhole_tech_jets = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_PLANES
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -1531,8 +1611,11 @@ technologies = {
 	
 	jet_tactical_bomber2 = {
 
-		dependencies = {
-			foxhole_tech_jets = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_ADVANCED_PLANES
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -1557,11 +1640,19 @@ technologies = {
 		}
 	}
 	
-	
 	strategic_bomber1 = {
 
-		dependencies = {
-			foxhole_tech_strategic_bomber_I = 1
+		allow_branch = {
+			OR = {
+				has_game_rule = {
+					rule = FOXHOLE_STRATEGIC_BOMBERS
+					option = RESTRICTED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_STRATEGIC_BOMBERS
+					option = ENABLED
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -1603,8 +1694,11 @@ technologies = {
 	
 	strategic_bomber2 = {
 
-		dependencies = {
-			foxhole_tech_strategic_bombers = 1
+		allow_branch = {
+			has_game_rule = {
+				rule = FOXHOLE_STRATEGIC_BOMBERS
+				option = ENABLED
+			}
 		}
 
 		enable_equipments = {
@@ -1646,9 +1740,23 @@ technologies = {
 	
 	strategic_bomber3 = {
 
-		dependencies = {
-			foxhole_tech_strategic_bombers = 1
-			foxhole_tech_planes_III = 1
+		allow_branch = {
+			AND = {
+				has_game_rule = {
+					rule = FOXHOLE_STRATEGIC_BOMBERS
+					option = ENABLED
+				}
+				OR = {
+					has_game_rule = {
+						rule = FOXHOLE_ADVANCED_PLANES
+						option = NO_JETS
+					}
+					has_game_rule = {
+						rule = FOXHOLE_ADVANCED_PLANES
+						option = ENABLED
+					}
+				}
+			}
 		}
 
 		enable_equipments = {
@@ -1690,9 +1798,17 @@ technologies = {
 	
 	jet_strategic_bomber1 = {
 
-		dependencies = {
-			foxhole_tech_strategic_bombers = 1
-			foxhole_tech_jets = 1
+		allow_branch = {
+			AND = {
+				has_game_rule = {
+					rule = FOXHOLE_STRATEGIC_BOMBERS
+					option = ENABLED
+				}
+				has_game_rule = {
+					rule = FOXHOLE_ADVANCED_PLANES
+					option = ENABLED
+				}
+			}
 		}
 
 		enable_equipments = {
