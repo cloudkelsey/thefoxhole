@@ -9864,32 +9864,41 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		any_country = {
-			original_tag = SPR
-			OR = {
-				has_government = democratic
-				has_government = communism
-			}
-
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ROOT
-					count > 0
-				}
-				has_game_rule = {
-					rule = foxhole_competitive_setup_mode
-					option = COMPETITIVE
-				}
-			}
-			has_completed_focus = SPR_relocate_the_gold_reserves
-		}
 		OR = {
-			has_country_flag = SPR_relocated_gold_reserves_selection_flag_sov
-			has_country_flag = SPR_relocated_gold_reserves_selection_flag1
-			has_country_flag = SPR_relocated_gold_reserves_selection_flag2
-			has_country_flag = SPR_relocated_gold_reserves_selection_flag3
+			AND = {
+				any_country = {
+					original_tag = SPR
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+					has_completed_focus = SPR_relocate_the_gold_reserves
+				}
+				OR = {
+					has_country_flag = SPR_relocated_gold_reserves_selection_flag_sov
+					has_country_flag = SPR_relocated_gold_reserves_selection_flag1
+					has_country_flag = SPR_relocated_gold_reserves_selection_flag2
+					has_country_flag = SPR_relocated_gold_reserves_selection_flag3
+				}
+				NOT = { has_country_flag = SPR_relocate_the_gold_reserves_timer_flag }
+			}
+			AND = { #this will make the event fire early but at least it will fire
+				foxhole_is_in_competitive_mode = yes
+				tag = SOV
+				any_country = {
+					original_tag = SPR
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+					has_completed_focus = SPR_relocate_the_gold_reserves
+				}
+			}
 		}
-		NOT = { has_country_flag = SPR_relocate_the_gold_reserves_timer_flag }
 	}
 
 	mean_time_to_happen = {
