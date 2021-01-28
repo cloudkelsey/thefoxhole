@@ -82,26 +82,26 @@ no_garrison = {
 	ai_will_do = {
 		base = 0
 		
-		modifier = {
-			FROM = {
-				has_government = democratic
-			}
-			has_active_resistance = no
-			add = 200
-		}
-		# if losing, get manpower & equipment back
-		modifier = {
-			FROM = {
-				surrender_progress > 0.15
-			}
-			add = 100
-		}
-		modifier = {
-			FROM = {
-				surrender_progress > 0.4
-			}
-			add = 500
-		}
+		# modifier = {
+		# 	FROM = {
+		# 		has_government = democratic
+		# 	}
+		# 	has_active_resistance = no
+		# 	add = 200
+		# }
+		# # if losing, get manpower & equipment back
+		# modifier = {
+		# 	FROM = {
+		# 		surrender_progress > 0.15
+		# 	}
+		# 	add = 100
+		# }
+		# modifier = {
+		# 	FROM = {
+		# 		surrender_progress > 0.4
+		# 	}
+		# 	add = 500
+		# }
 	}
 }
 
