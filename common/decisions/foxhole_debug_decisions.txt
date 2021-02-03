@@ -1,29 +1,2 @@
 foxhole_debug_decisions_category = {
-	foxhole_debug_build_malta = {
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			116 = {
-				add_building_construction = {
-					type = air_base
-					level = 30
-					instant_build = yes
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
 }

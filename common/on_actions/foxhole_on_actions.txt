@@ -15,11 +15,6 @@ on_actions = {
 					}
 				}
 			}
-			every_country = {
-				set_technology = {
-					foxhole_enable_default_air_base_levels = 1
-				}
-			}
 		}
 	}
 
