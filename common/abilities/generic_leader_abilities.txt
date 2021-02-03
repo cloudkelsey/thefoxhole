@@ -20,8 +20,8 @@ ability = {
 			}
 			NOT = { #disable the ability if gamerule requires it
 				has_game_rule = {
-					rule = FOXHOLE_WIN_BUTTON
-					option = FOXHOLE_ALLOW_WIN_BUTTON_DISABLED
+					rule = foxhole_allow_win_button
+					option = DISABLED
 				}
 			}
 		}
@@ -41,8 +41,8 @@ ability = {
 
 				NOT = { #check if ai is allowed to use the ability
 					has_game_rule = {
-						rule = FOXHOLE_WIN_BUTTON
-						option = FOXHOLE_ALLOW_WIN_BUTTON_PLAYER_ONLY
+						rule = foxhole_allow_win_button
+						option = PLAYER_ONLY
 					}
 				}
 
@@ -87,8 +87,8 @@ ability = {
 			}
 			NOT = { #disable the ability if gamerule requires it
 				has_game_rule = {
-					rule = FOXHOLE_WIN_BUTTON
-					option = FOXHOLE_ALLOW_WIN_BUTTON_DISABLED
+					rule = foxhole_allow_win_button
+					option = DISABLED
 				}
 			}
 		}
@@ -125,8 +125,8 @@ ability = {
 
 				NOT = { #check if ai is allowed to use the ability
 					has_game_rule = {
-						rule = FOXHOLE_WIN_BUTTON
-						option = FOXHOLE_ALLOW_WIN_BUTTON_PLAYER_ONLY
+						rule = foxhole_allow_win_button
+						option = PLAYER_ONLY
 					}
 				}
 
