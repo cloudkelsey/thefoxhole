@@ -1,7 +1,5 @@
 foxhole_debug_decisions_category = {
-	foxhole_enable_planes_III = {
-
-		icon = generic_research
+	foxhole_debug_build_malta = {
 
 		available = {
 			always = yes
@@ -15,137 +13,12 @@ foxhole_debug_decisions_category = {
 		cost = 0
 
 		complete_effect = {
-			set_technology = {
-				foxhole_tech_planes_III = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	foxhole_enable_jets = {
-
-		icon = generic_research
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			set_technology = {
-				foxhole_tech_jets = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	foxhole_enable_strategic_bombers_I = {
-
-		icon = generic_research
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			set_technology = {
-				foxhole_tech_strategic_bomber_I = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	foxhole_enable_strategic_bombers = {
-
-		icon = generic_research
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			set_technology = {
-				foxhole_tech_strategic_bombers = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-
-	foxhole_enable_modern_tanks = {
-
-		icon = generic_research
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			set_technology = {
-				foxhole_tech_modern_tanks = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-		}
-	}
-	foxhole_enable_advnanced_submarines_debug = {
-
-		icon = generic_research
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			set_technology = {
-				foxhole_tech_advanced_submarines = 1
+			116 = {
+				add_building_construction = {
+					type = air_base
+					level = 30
+					instant_build = yes
+				}
 			}
 		}
 
