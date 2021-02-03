@@ -102,3 +102,20 @@ foxhole_ai_guarantees = {
 		desc = "FOXHOLE_AI_GUARANTEES_ENABLED_DESC"
 	}
 }
+
+foxhole_allow_win_button = { #thx Sam for spell check
+	name = "FOXHOLE_WIN_BUTTON"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = { #disable the force attack and last stand buttons for everyone
+		name = DISABLED
+		text = "FOXHOLE_ALLOW_WIN_BUTTON_DISABLED"
+	}
+	option = { #disable the force attack and last stand buttons for just the ai
+		name = PLAYER_ONLY
+		text = "FOXHOLE_ALLOW_WIN_BUTTON_PLAYER_ONLY"
+	}
+	option = { #enable the force attack and last stand buttons for everyone
+		name = ENABLED
+		text = "FOXHOLE_ALLOW_WIN_BUTTON_ENABLED"
+	}
+}

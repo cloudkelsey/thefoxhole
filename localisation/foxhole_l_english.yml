@@ -44,6 +44,11 @@
  FOXHOLE_AI_GUARANTEES_ENABLED:0 "Enabled"
  FOXHOLE_AI_GUARANTEES_ENABLED_DESC:0 "Allow the AI to guarantee the independance of other countries."
 
+ FOXHOLE_WIN_BUTTON:0 "Last Stand and Force Attack"
+ FOXHOLE_ALLOW_WIN_BUTTON_DISABLED:0 "Disabled"
+ FOXHOLE_ALLOW_WIN_BUTTON_PLAYER_ONLY:0 "Players Only"
+ FOXHOLE_ALLOW_WIN_BUTTON_ENABLED:0 "Enabled"
+
 #events
  foxhole_SOV_demands.0.t:0 "Soviet Ultimatum"
  foxhole_SOV_demands.0.d:0 "The Soviets are massing their troops outside our border and are demanding that we surrender their claims."
