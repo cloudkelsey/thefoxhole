@@ -1664,10 +1664,16 @@
 		available = {
 			is_faction_leader = yes
 			country_exists = SIA
+			has_full_control_of_state = 671
+			has_full_control_of_state = 670
+			has_full_control_of_state = 286
+			has_full_control_of_state = 741
 		}
 
 		bypass = {
-			is_in_faction_with = SIA
+			NOT = {
+				country_exists = SIA
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1676,11 +1682,15 @@
 
 
 		completion_reward = {
-			SIA = { country_event = generic.5 }
-			add_ai_strategy = {
-				type = protect
-				id = "SIA"
-				value = 100
+			annex_country = {
+				target = SIA
+				transfer_troops = yes
+			}
+			289 = {
+				add_compliance = 50
+			}
+			724 = {
+				add_compliance = 50
 			}
 		}
 	}
