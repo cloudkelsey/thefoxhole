@@ -5070,6 +5070,8 @@ focus_tree = {
 					}
 				}
 			}
+			#without this, turkey will join the allies in ~1942/43 because the UK will accept
+			is_ai = no
 		}
 		x = 0
 		y = 2
