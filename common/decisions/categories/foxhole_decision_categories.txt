@@ -11,4 +11,5 @@ foxhole_soviet_molotov_claims_category = {
 		original_tag = SOV
 		has_idea = SOV_molotov_ribbentrop_pact
 	}
+	priority = 200
 }
