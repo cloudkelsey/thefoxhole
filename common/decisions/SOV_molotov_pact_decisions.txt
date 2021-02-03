@@ -66,6 +66,7 @@ foxhole_soviet_molotov_claims_category = {
                     days = 1
                 }
             }
+            add_threat = 2
         }
     }
 
@@ -136,6 +137,7 @@ foxhole_soviet_molotov_claims_category = {
                     days = 1
                 }
             }
+            add_threat = 2
         }
     }
 
@@ -221,6 +223,7 @@ foxhole_soviet_molotov_claims_category = {
                     days = 1
                 }
             }
+            add_threat = 2
         }
     }
 
@@ -291,6 +294,7 @@ foxhole_soviet_molotov_claims_category = {
                     days = 1
                 }
             }
+            add_threat = 5
         }
     }
 
@@ -361,6 +365,7 @@ foxhole_soviet_molotov_claims_category = {
                     days = 1
                 }
             }
+            add_threat = 5
         }
     }
 }
