@@ -123,15 +123,15 @@ foxhole_allow_win_button = { #thx Sam for spell check
 foxhole_italian_east_africa = {
 	name = "FOXHOLE_ITALIAN_EAST_AFRICA"
 	group = "FOXHOLE_GAME_RULES_GROUP"
-	option = { #if ethiopia wasn't fully annexed by italy, an event will force annex them
-		name = FORCE_ANNEX
-		text = "FOXHOLE_ITALIAN_EAST_AFRICA_FORCE_ANNEX"
-		desc = "FOXHOLE_ITALIAN_EAST_AFRICA_FORCE_ANNEX_DESC"
-	}
 	option = { #italy gets a decision to annex ethiopia, as well as a decision to give the rest of italian east africa to an ethiopian puppet
 		name = DECISION
 		text = "FOXHOLE_ITALIAN_EAST_AFRICA_DECISION"
 		desc = "FOXHOLE_ITALIAN_EAST_AFRICA_DECISION_DESC"
+	}
+	option = { #if ethiopia wasn't fully annexed by italy, an event will force annex them
+		name = FORCE_ANNEX
+		text = "FOXHOLE_ITALIAN_EAST_AFRICA_FORCE_ANNEX"
+		desc = "FOXHOLE_ITALIAN_EAST_AFRICA_FORCE_ANNEX_DESC"
 	}
 	option = { #unaltered vanilla behavior
 		name = DEFAULT
