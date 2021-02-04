@@ -52,8 +52,9 @@ if = {
 	add_ideas = POR_unreliable_army
 	add_ideas = POR_unstable_republic
 	set_stability = 0.60
-	set_war_support = 0.15	
-	set_research_slots = 2
+	set_war_support = 0.15
+	#leave research slots at 3
+	#set_research_slots = 2
 
 	ENG = {
 		add_opinion_modifier = {
