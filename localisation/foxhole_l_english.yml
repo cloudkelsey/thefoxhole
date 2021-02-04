@@ -49,6 +49,14 @@
  FOXHOLE_ALLOW_WIN_BUTTON_PLAYER_ONLY:0 "Players Only"
  FOXHOLE_ALLOW_WIN_BUTTON_ENABLED:0 "Enabled"
 
+ FOXHOLE_ITALIAN_EAST_AFRICA:0 "Italian East Africa"
+ FOXHOLE_ITALIAN_EAST_AFRICA_DECISION:0 "Decisions"
+ FOXHOLE_ITALIAN_EAST_AFRICA_DECISION_DESC:0 "Enable decisions to annex or expand Ethiopia once they are a puppet of Italy."
+ FOXHOLE_ITALIAN_EAST_AFRICA_FORCE_ANNEX:0 "Force Annex"
+ FOXHOLE_ITALIAN_EAST_AFRICA_FORCE_ANNEX_DESC:0 "If Italy didn't annex Ethiopia, they will be annexed automatically."
+ FOXHOLE_ITALIAN_EAST_AFRICA_DEFAULT:0 "Default"
+ FOXHOLE_ITALIAN_EAST_AFRICA_DEFAULT_DESC:0 "Vanilla behavior with no added mechanics."
+
 #events
  foxhole_SOV_demands.0.t:0 "Soviet Ultimatum"
  foxhole_SOV_demands.0.d:0 "The Soviets are massing their troops outside our border and are demanding that we surrender their claims."
@@ -71,6 +79,10 @@
  foxhole_demand_lithuania:0 "Demand Lithuania"
  foxhole_demand_bessarabia:0 "Demand Bessarabia"
  foxhole_demand_finland:0 "Demand our Finish claims"
+
+ foxhole_italian_east_africa_category:0 "Italian East Africa"
+ foxhole_annex_italian_east_africa:0 "Annex Italian East Africa"
+ foxhole_unify_italian_east_africa:0 "Unify Italian East Africa"
 
  improved_worker_conditions_cooldown:0 "Improved Worker Conditions Cooldown"
 
