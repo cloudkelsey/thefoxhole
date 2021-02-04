@@ -1,0 +1,29 @@
+country_event = { #event for force annexation of ethiopia
+    id = foxhole_east_africa.1
+    title = foxhole_east_africa.1.t
+    desc = foxhole_east_africa.1.d
+
+    trigger = {
+        ITA = {
+            has_war = no
+            country_exists = ETH
+        }
+        has_game_rule = {
+            rule = foxhole_italian_east_africa
+            option = FORCE_ANNEX
+        }
+    }
+
+    fire_only_once = yes
+
+    hidden = yes
+
+    immediate = {
+        ITA = {
+            annex_country = {
+                target = ETH
+                transfer_troops = no
+            }
+        }
+    }
+}
