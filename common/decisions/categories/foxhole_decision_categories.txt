@@ -13,3 +13,14 @@ foxhole_soviet_molotov_claims_category = {
 	}
 	priority = 200
 }
+
+foxhole_italian_east_africa_category = {
+	visible = {
+		original_tag = ITA
+		has_game_rule = {
+			rule = foxhole_italian_east_africa
+			option = DECISION
+		}
+	}
+	priority = 200
+}
