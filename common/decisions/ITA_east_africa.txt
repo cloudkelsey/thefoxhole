@@ -1,5 +1,5 @@
 foxhole_italian_east_africa_category = {
-    foxhole_annex_italian_east_africa = {
+    foxhole_annex_italian_east_africa = { #if Ethiopia is puppeted by Italy, they can be annexed for free while Italy is at peace
         visible = {
             ETH = {
                 is_subject_of = ITA
@@ -18,7 +18,7 @@ foxhole_italian_east_africa_category = {
         }
     }
 
-    foxhole_unify_italian_east_africa = {
+    foxhole_unify_italian_east_africa = { #if Ethiopia is puppeted by Italy, they can give them Somaliland and Eritrea while Italy is at peace
         visible = {
             ETH = {
                 is_subject_of = ITA
