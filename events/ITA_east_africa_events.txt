@@ -1,3 +1,5 @@
+add_namespace = foxhole_east_africa
+
 country_event = { #event for force annexation of ethiopia
     id = foxhole_east_africa.1
     title = foxhole_east_africa.1.t
