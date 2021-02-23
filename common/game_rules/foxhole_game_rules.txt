@@ -139,3 +139,18 @@ foxhole_italian_east_africa = {
 		desc = "FOXHOLE_ITALIAN_EAST_AFRICA_DEFAULT_DESC"
 	}
 }
+
+foxhole_force_join_faction = {
+	name = "FOXHOLE_FORCE_JOIN_FACTION"
+	group = "FOXHOLE_GAME_RULES_GROUP"
+	option = {
+		name = BLOCK
+		text = "FOXHOLE_FORCE_JOIN_FACTION_BLOCK"
+		desc = "FOXHOLE_FORCE_JOIN_FACTION_BLOCK_DESC"
+	}
+	option = {
+		name = ALLOW
+		text = "FOXHOLE_FORCE_JOIN_FACTION_ALLOW"
+		desc = "FOXHOLE_FORCE_JOIN_FACTION_ALLOW_DESC"
+	}
+}
