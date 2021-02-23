@@ -1,0 +1,83 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#ai control
+			every_country = {
+				limit = {
+					is_ai = yes
+					OR = {
+						#south america
+						tag = ARG
+						tag = URG
+						tag = PAR
+						tag = BOL
+						tag = CHL
+						tag = BRA
+						tag = PRU
+						tag = ECU
+						tag = COL
+						tag = VEN
+						#central america
+						tag = PAN
+						tag = COS
+						tag = NIC
+						tag = HON
+						tag = ELS
+						tag = GUA
+						#caribbean
+						tag = CUB
+						tag = HAI
+						tag = DOM
+						#africa
+						tag = LIB
+						#middle east
+						tag = IRQ
+						tag = SAU
+						tag = YEM
+						tag = OMA
+						#asia
+						tag = PER
+						tag = AFG
+						tag = TIB
+						tag = NEP
+						tag = BHU
+					}
+					#this causes the game to consider the following effect as a trigger
+					# tag = {
+					# 	ARG
+					# 	URG
+					# 	PAR
+					# 	BOL
+					# 	CHL
+					# 	BRA
+					# }
+				}
+				add_ideas = AI_control
+			}
+
+			#hist ai control
+			if = {
+				limit = {
+					foxhole_historical_mode = yes
+				}
+				every_country = {
+					limit = {
+						is_ai = yes
+						OR = {
+							has_idea = AI_control
+
+							tag = SWE
+							tag = SWI
+							tag = POR
+							tag = TUR
+						}
+					}
+					swap_ideas = {
+						remove_idea = AI_control
+						add_idea = AI_hist_control
+					}
+				}
+			}
+		}
+	}
+}
