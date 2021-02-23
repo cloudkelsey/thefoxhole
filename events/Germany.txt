@@ -734,7 +734,7 @@ country_event = {
 
 		if = {
 			limit = {
-				foxhole_is_in_competitive_mode = yes #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
+				foxhole_historical_mode = yes #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
 			}
 			HUN = { 
 				transfer_state = 76
@@ -775,7 +775,7 @@ country_event = {
 
 		if = {
 			limit = {
-				foxhole_is_in_competitive_mode = yes #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
+				foxhole_historical_mode = yes #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
 			}
 			HUN = { 
 				transfer_state = 76
@@ -809,7 +809,7 @@ country_event = {
 
 		if = {
 			limit = {
-				foxhole_is_in_competitive_mode = no #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
+				foxhole_historical_mode = no #don't trigger the full event chain in historical mode simply transfer the stuff dirrectly to avoid problems
 			}
 			ROM = {
 				country_event = { id = romania.4 }
@@ -4140,7 +4140,7 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					foxhole_is_in_competitive_mode = yes
+					foxhole_historical_mode = yes
 					is_historical_focus_on = yes
 				}
 			}

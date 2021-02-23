@@ -28,7 +28,7 @@ country_event = {
 						}
 					}
 					has_idea = anti_soviet_pact
-					foxhole_is_in_competitive_mode = yes
+					foxhole_historical_mode = yes
 				}
 			}
 		}

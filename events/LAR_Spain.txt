@@ -9887,7 +9887,7 @@ country_event = {
 				NOT = { has_country_flag = SPR_relocate_the_gold_reserves_timer_flag }
 			}
 			AND = { #this will make the event fire early but at least it will fire
-				foxhole_is_in_competitive_mode = yes
+				foxhole_historical_mode = yes
 				tag = SOV
 				any_country = {
 					original_tag = SPR

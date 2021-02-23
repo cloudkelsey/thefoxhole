@@ -5,7 +5,7 @@ on_actions = {
 				limit = { # If competitive game rule is selected and Finland is AI at the start of the game
 					FIN = {
 						is_ai = yes
-						foxhole_is_in_competitive_mode = yes
+						foxhole_historical_mode = yes
 					}
 				}
 				FIN = {
@@ -23,7 +23,7 @@ on_actions = {
 			if = {
 				limit = { # If the declared war is the SCW and the competitive game rule is selected
 					SOV = { is_ai = no }
-					foxhole_is_in_competitive_mode = yes
+					foxhole_historical_mode = yes
 					OR = {
 						AND = {
 							tag = SPA

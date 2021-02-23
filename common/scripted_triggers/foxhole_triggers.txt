@@ -1,4 +1,4 @@
-foxhole_is_in_competitive_mode = {
+foxhole_historical_mode = {
 	has_game_rule = {
 		rule = foxhole_competitive_setup_mode
 		option = COMPETITIVE
