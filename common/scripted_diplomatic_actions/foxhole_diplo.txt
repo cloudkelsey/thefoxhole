@@ -1,7 +1,7 @@
 
 scripted_diplomatic_actions = {
 
-	force_join_faction = {
+	diplo_force_join_faction = {
 	
 		# root is the initiator of action and this is the target country
 		allowed = { #if action is valid
@@ -20,11 +20,17 @@ scripted_diplomatic_actions = {
 			}
 		}
 		selectable = { #if action is selectable on gui
-			this = {
-				is_ai = no
-			}
-			root = {
-				is_ai = no
+			custom_trigger_tooltip = {
+				tooltip = diplo_force_join_faction_tt
+				OR = {
+					this = {
+						is_ai = no
+					}
+					is_debug = yes
+				}
+				root = {
+					is_ai = no
+				}
 			}
 		}
 
@@ -51,25 +57,23 @@ scripted_diplomatic_actions = {
 		can_be_sent = { # send button will be disabled if no
 			always = yes
 		}
-		send_description = loc_key_send # if there is no scripted gui, this desc will be used in send yes/no pop up
+		send_description = diplo_force_join_faction_send # if there is no scripted gui, this desc will be used in send yes/no pop up
 
 		can_be_accepted = { # accept button will be disabled if no
 			always = yes
 		}
-		receive_description = loc_key_receive # if there is no scripted gui, this desc will be used in send yes/no pop up
+		receive_description = diplo_force_join_faction_receive # if there is no scripted gui, this desc will be used in send yes/no pop up
 
 		# PLAYER FEEDBACK ON ACCEPT/REJECT
-		accept_title = loc_key_accept #can be overridden to customize accepted/rejected pop ups for the sender
-		accept_description = loc_key_accept_desc
-		reject_title = loc_key_reject
-		reject_description = loc_key_reject_desc
+		accept_title = diplo_force_join_faction_accept
+		#accept_description = diplo_force_join_faction_accept_desc
+		reject_title = diplo_force_join_faction_reject
+		#reject_description = diplo_force_join_faction_reject_desc
 
 		# AI
 		# a list of ai_will_do entries that will be used to decide if AI should accept or reject a request
 		ai_acceptance = {
-			condition = { # name is used for loc
-				base = -1
-			}
+			base = 1
 		}
 
 		# ai_will_do to decide if AI should send this action or not
