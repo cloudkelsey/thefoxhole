@@ -155,7 +155,7 @@ ideas = {
 						has_war_support > 0.5
 						has_stability > 0.5
 						threat > 0.2
-						foxhole_is_in_competitive_mode = no
+						foxhole_historical_mode = no
 					}
 					AND = {
 						has_war = yes
