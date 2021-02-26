@@ -1,0 +1,6 @@
+scripted_gui = {
+	foxhole_general_grinding_ui = {
+		context_type = decision_category
+		window_name = "foxhole_general_grinding_ui_window"
+	}
+}
