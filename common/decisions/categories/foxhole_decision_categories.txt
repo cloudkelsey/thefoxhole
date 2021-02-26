@@ -24,3 +24,12 @@ foxhole_italian_east_africa_category = {
 	}
 	priority = 200
 }
+
+foxhole_general_grinding_category = {
+	visible = {
+		is_debug = yes
+	}
+	visible_when_empty = yes
+	scripted_gui = foxhole_general_grinding_ui
+	priority = 1000
+}
