@@ -15,6 +15,27 @@ on_actions = {
 					}
 				}
 			}
+			ENG = {
+				#Reecer01EasterEgg
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = foxhole_easter_egg
+							option = EASTER_EGG_ALLOW
+						}
+					}
+					create_corps_commander = {
+						name = "Reecer01" #BridgeGoblin
+						portrait_path = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
+						traits = { media_personality bridge_goblin }
+						skill = 5
+						attack_skill = 3
+						defense_skill = 4
+						planning_skill = 2
+						logistics_skill = 5
+					}
+				}
+			}
 		}
 	}
 

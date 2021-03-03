@@ -160,13 +160,12 @@ foxhole_easter_egg = {
 	name = "FOXHOLE_EASTER_EGG"
 	group = "FOXHOLE_GAME_RULES_GROUP"
 	option = {
+		name = EASTER_EGG_BLOCK
+		text = "FOXHOLE_EASTER_EGG_BLOCK"
+	}
+	option = {
 		name = EASTER_EGG_ALLOW
 		text = "FOXHOLE_EASTER_EGG_ALLOW"
 		desc = "FOXHOLE_EASTER_EGG_ALLOW_DESC"
-	}
-	option = {
-		name = EASTER_EGG_BLOCK
-		text = "FOXHOLE_EASTER_EGG_BLOCK"
-		desc = "FOXHOLE_EASTER_EGG_BLOCK_DESC"
 	}
 }
