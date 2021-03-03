@@ -101,7 +101,10 @@
 
 #diplomacy
  #the name of the action doesn't seem to be affected
- DIPLO_FORCE_JOIN_FACTION_ACTION_DESC:0 "Join faction"
+ #diplo_force_join_faction_title:0 "Join Faction"
+ DIPLO_FORCE_JOIN_FACTION_TITLE:0 "Join Faction"
+ #diplo_force_join_faction_action_desc:0 "Ask to join a player's faction without regard for ideology or world tension."
+ DIPLO_FORCE_JOIN_FACTION_ACTION_DESC:0 "Ask to join a player's faction without regard for ideology or world tension."
  diplo_force_join_faction_tt:0 "[This.GetName] is controlled by a player."
  diplo_force_join_faction_send:0 "Ask to join the [This.GetFactionName] without regard for ideology or world tension."
  diplo_force_join_faction_receive:0 "[Root.GetName] asks to join the [This.GetFactionName]."

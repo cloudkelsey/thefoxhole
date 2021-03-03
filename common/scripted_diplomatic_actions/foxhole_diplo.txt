@@ -20,17 +20,23 @@ scripted_diplomatic_actions = {
 			}
 		}
 		selectable = { #if action is selectable on gui
-			custom_trigger_tooltip = {
-				tooltip = diplo_force_join_faction_tt
-				OR = {
-					this = {
-						is_ai = no
-					}
-					is_debug = yes
-				}
-				root = {
-					is_ai = no
-				}
+			# custom_trigger_tooltip = {
+			# 	tooltip = diplo_force_join_faction_tt
+			# 	OR = {
+			# 		this = {
+			# 			is_ai = no
+			# 		}
+			# 		is_debug = yes
+			# 	}
+			# 	root = {
+			# 		is_ai = no
+			# 	}
+			# }
+			this = {
+				is_ai = no
+			}
+			root = {
+				is_ai = no
 			}
 		}
 
