@@ -109,3 +109,7 @@
  #diplo_force_join_faction_accept_desc:0
  diplo_force_join_faction_reject:0 "[This.GetName] denies our entry into the [This.GetFactionName]."
  #diplo_force_join_faction_reject_desc:0
+
+#traits
+ bridge_goblin:0 "Bridge Goblin"
+ bridge_goblin_desc:0 "§GLiving under the bridge so long has turned Reecer01 into what some would call an expert of the bridge pattern, with careful planning and consideration. This Goblin will be able to turn the bridge into a divisions worse nightmare when it comes to crossing§G §RBE WARNED, YOUR ANKLES ARE NOT SAFE§R"
