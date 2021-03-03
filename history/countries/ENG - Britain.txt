@@ -698,8 +698,9 @@ create_corps_commander = {
 #Reecer01 Easter Egg
 create_corps_commander = {
 	name = "Reecer01" #BridgeGoblin
+	portrait_path = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
 	traits = { media_personality cautious bridge_goblin }
-	skill = 4
+	skill = 5
 	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 1
