@@ -63,6 +63,11 @@
  FOXHOLE_FORCE_JOIN_FACTION_ALLOW:0 "Enabled"
  FOXHOLE_FORCE_JOIN_FACTION_ALLOW_DESC:0 "Allow players to bypass ideology and world tension limits when joining player factions."
 
+ FOXHOLE_EASTER_EGG:0 "Easter Eggs"
+ FOXHOLE_EASTER_EGG_BLOCK:0 "Disable"
+ FOXHOLE_EASTER_EGG_ALLOW:0 "Enable"
+ FOXHOLE_EASTER_EGG_ALLOW_DESC:0 "Enables easter egg generals and small features to make the game a bit more goofy."
+
 #events
  foxhole_SOV_demands.0.t:0 "Soviet Ultimatum"
  foxhole_SOV_demands.0.d:0 "The Soviets are massing their troops outside our border and are demanding that we surrender their claims."

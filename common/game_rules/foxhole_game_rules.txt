@@ -162,7 +162,6 @@ foxhole_easter_egg = {
 	option = {
 		name = EASTER_EGG_BLOCK
 		text = "FOXHOLE_EASTER_EGG_BLOCK"
-		desc = "FOXHOLE_EASTER_EGG_BLOCK_DESC"
 	}
 	option = {
 		name = EASTER_EGG_ALLOW
