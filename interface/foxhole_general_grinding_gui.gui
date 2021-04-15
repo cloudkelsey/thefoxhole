@@ -1,3 +1,17 @@
+#gui elements
+
+#general pic
+#general name
+#general traits
+#general skills
+#level up button
+#skill points count
+#terrain points count
+#terrain traits
+#general points count
+#general traits
+
+
 guiTypes = {
 	containerWindowType = {
 		name = "foxhole_general_grinding_ui_window"
@@ -8,6 +22,17 @@ guiTypes = {
 		size = {
 			width = 100%
 			height= 512
+		}
+
+		#spriteType ="GFX_leader_selection_bg"
+
+		instantTextBoxType = {
+			name ="training_general_name"
+			position = { x = 30 y = 0 }
+			font = "hoi_18mbs"
+			text = "gui_training_general_name"
+			format = center
+			maxHeight = 12
 		}
 	}
 }
