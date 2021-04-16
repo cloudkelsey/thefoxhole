@@ -1,0 +1,48 @@
+foxhole_general_grinding_category = {
+    foxhole_debug_general_grinding_select_general = {
+        visible = {
+            is_debug = yes
+        }
+
+        available = {
+            NOT = {
+                any_army_leader = {
+                    has_unit_leader_flag = foxhole_grinding_selected
+                }
+            }
+            any_army_leader = {
+                num_units = 1
+            }
+        }
+
+        complete_effect = {
+            random_army_leader = {
+                limit = {
+                    num_units = 1
+                }
+                set_unit_leader_flag = foxhole_grinding_selected
+            }
+        }
+    }
+
+    foxhole_debug_general_grinding_release_general = {
+        visible = {
+            is_debug = yes
+        }
+
+        available = {
+            any_army_leader = {
+                foxhole_general_grinding_is_selected = yes
+            }
+        }
+
+        complete_effect = {
+            random_army_leader = {
+                limit = {
+                    has_unit_leader_flag = foxhole_grinding_selected
+                }
+                clr_unit_leader_flag = foxhole_grinding_selected
+            }
+        }
+    }
+}
