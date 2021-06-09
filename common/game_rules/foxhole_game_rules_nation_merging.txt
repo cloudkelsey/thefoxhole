@@ -1,0 +1,60 @@
+foxhole_merge_south_america = {
+	name = "FOXHOLE_MERGE_SOUTH_AMERICA"
+	group = "FOXHOLE_GAME_RULES_NATION_MERGING"
+	option = { #do nothing
+		name = DEFAULT
+		text = "FOXHOLE_MERGE_SOUTH_AMERICA_DEFAULT"
+	}
+	option = { #columbia annexes all non players & gets cores
+		name = COLUMBIA_ANNEX
+		text = "FOXHOLE_MERGE_SOUTH_AMERICA_COLUMBIA_ANNEX"
+		desc = "FOXHOLE_MERGE_SOUTH_AMERICA_COLUMBIA_ANNEX_DESC"
+	}
+}
+
+foxhole_merge_asia = {
+	name = "FOXHOLE_MERGE_ASIA"
+	group = "FOXHOLE_GAME_RULES_NATION_MERGING"
+	option = { #do nothing
+		name = DEFAULT
+		text = "FOXHOLE_MERGE_ASIA_DEFAULT"
+	}
+	option = { #buthan annexes nepal & tibet & gets cores
+		name = ANNEX
+		text = "FOXHOLE_MERGE_ASIA_ANNEX"
+		desc = "FOXHOLE_MERGE_ASIA_ANNEX_DESC"
+	}
+}
+
+foxhole_merge_china = {
+	name = "FOXHOLE_MERGE_CHINA"
+	group = "FOXHOLE_GAME_RULES_NATION_MERGING"
+	option = { #do nothing
+		name = DEFAULT
+		text = "FOXHOLE_MERGE_CHINA_DEFAULT"
+	}
+	option = { #nationalist china annex all warlords
+		name = ANNEX
+		text = "FOXHOLE_MERGE_CHINA_ANNEX"
+		desc = "FOXHOLE_MERGE_CHINA_ANNEX_DESC"
+	}
+	option = { #nationalist china annex guanxi & yunan, communist china annex shanxi, xibei san ma & sinkiang
+		name = DUAL_CHINA
+		text = "FOXHOLE_MERGE_CHINA_ANNEX"
+		desc = "FOXHOLE_MERGE_CHINA_ANNEX_DESC"
+	}
+}
+
+foxhole_merge_luxemburg = {
+	name = "FOXHOLE_MERGE_LUXEMBURG"
+	group = "FOXHOLE_GAME_RULES_NATION_MERGING"
+	option = { #do nothing
+		name = DEFAULT
+		text = "FOXHOLE_MERGE_LUXEMBURG_DEFAULT"
+	}
+	option = { #belgium annex luxemburg & gets cores
+		name = ANNEX
+		text = "FOXHOLE_MERGE_LUXEMBURG_ANNEX"
+		desc = "FOXHOLE_MERGE_LUXEMBURG_ANNEX_DESC"
+	}
+}
