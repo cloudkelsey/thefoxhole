@@ -21,6 +21,10 @@ foxhole_general_grinding_category = {
                     num_units = 1
                 }
                 set_unit_leader_flag = foxhole_grinding_selected
+
+                set_variable = {
+                    PREV.foxhole_selected_general = THIS.id
+                }
             }
         }
     }
