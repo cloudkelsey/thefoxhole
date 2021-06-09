@@ -5070,8 +5070,10 @@ focus_tree = {
 					}
 				}
 			}
-			#without this, turkey will join the allies in ~1942/43 because the UK will accept
-			is_ai = no
+			OR = {
+				foxhole_historical_mode = no
+				is_ai = no
+			}
 		}
 		x = 0
 		y = 2
@@ -5706,6 +5708,10 @@ focus_tree = {
 		prerequisite = { focus = TUR_the_italo_turkish_naval_academy }
 		available = { 
 			NOT = { has_war_with = ITA }
+			OR = {
+				foxhole_historical_mode = no
+				is_ai = no
+			}
 		}
 		x = -1
 		y = 1
@@ -5736,6 +5742,10 @@ focus_tree = {
 		prerequisite = { focus = TUR_the_italo_turkish_naval_academy }
 		available = { 
 			NOT = { has_war_with = GER }
+			OR = {
+				foxhole_historical_mode = no
+				is_ai = no
+			}
 		}
 		x = -1
 		y = 1
@@ -7006,6 +7016,10 @@ focus_tree = {
 		prerequisite = { focus = TUR_dissolve_the_ODPA }
 		available = {
 			NOT = { is_in_faction_with = SOV }
+			OR = {
+				foxhole_historical_mode = no
+				is_ai = no
+			}
 		}
 		x = 0
 		y = 1
@@ -7051,6 +7065,12 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			base = 10
+		}
+		available = {
+			OR = {
+				foxhole_historical_mode = no
+				is_ai = no
+			}
 		}
 
 		bypass = {
