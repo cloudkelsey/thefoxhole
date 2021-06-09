@@ -1,8 +1,14 @@
 foxhole_competitive_setup_mode = {
 	name = "FOXHOLE_COMPETITIVE_SETTING"
 	group = "FOXHOLE_GAME_RULES_GROUP"
-	option = { name = NORMAL text = "FOXHOLE_NORMAL_MODE" }
-	option = { name = COMPETITIVE text = "FOXHOLE_COMPETITIVE_MODE" }
+	option = {
+		name = NORMAL
+		text = "FOXHOLE_NORMAL_MODE"
+	}
+	option = {
+		name = COMPETITIVE
+		text = "FOXHOLE_COMPETITIVE_MODE"
+	}
 }
 
 foxhole_advanced_planes = {
