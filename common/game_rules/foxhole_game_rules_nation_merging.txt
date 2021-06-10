@@ -40,8 +40,8 @@ foxhole_merge_china = {
 	}
 	option = { #nationalist china annex guanxi & yunan, communist china annex shanxi, xibei san ma & sinkiang
 		name = DUAL_CHINA
-		text = "FOXHOLE_MERGE_CHINA_ANNEX"
-		desc = "FOXHOLE_MERGE_CHINA_ANNEX_DESC"
+		text = "FOXHOLE_MERGE_DUAL_CHINA_ANNEX"
+		desc = "FOXHOLE_MERGE_DUAL_CHINA_ANNEX_DESC"
 	}
 }
 
