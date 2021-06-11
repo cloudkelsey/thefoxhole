@@ -1,0 +1,196 @@
+on_actions = {
+	on_startup = {
+		effect = {
+
+			#merge into columbia
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = foxhole_merge_south_america
+						option = COLUMBIA_ANNEX
+					}
+				}
+				COL = {
+					every_other_country = { #annex all non player SA minors
+						limit = {
+							OR = {
+								#central america
+								tag = PAN
+								tag = COS
+								tag = NIC
+								tag = HON
+								tag = ELS
+								tag = GUA
+								#south america
+								tag = VEN
+								tag = ECU
+								tag = PRU
+								tag = BOL
+								tag = PAR
+								tag = CHL
+								tag = ARG
+								tag = URG
+								#caribean
+								tag = CUB
+								tag = HAI
+								tag = DOM
+							}
+							is_ai = yes
+						}
+						COL = {
+							annex_country = {
+								target = prev
+								transfer_troops = yes
+							}
+						}
+					}
+
+					every_controlled_state = { #core it all for ressources
+						add_core_of = COL
+					}
+				}
+			}
+
+			#merge into buthan
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = foxhole_merge_asia
+						option = ANNEX
+					}
+				}
+				BHU = {
+					every_other_country = { #annex non player tibet and nepal
+						limit = {
+							OR = {
+								tag = TIB
+								tag = NEP
+							}
+							is_ai = yes
+						}
+						BHU = {
+							annex_country = {
+								target = prev
+								transfer_troops = yes
+							}
+						}
+					}
+
+					every_owned_state = { #core it all for ressources
+						add_core_of = BHU
+					}
+				}
+			}
+
+			#merge into nationalist china
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = foxhole_merge_china
+						option = ANNEX
+					}
+				}
+				CHI = {
+					every_other_country = { #annex all non player warlords
+						limit = {
+							OR = {
+								tag = GXC
+								tag = YUN
+								tag = SHX
+								tag = XSM
+								tag = SIK
+								tag = PRC#need top check if it causes problems with event chains
+							}
+							is_ai = yes
+						}
+						CHI = {
+							annex_country = {
+								target = prev
+								transfer_troops = yes
+							}
+						}
+					}
+					#china starts with cores
+				}
+			}
+
+			#merge into both nationalist & communist china
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = foxhole_merge_china
+						option = DUAL_CHINA
+					}
+				}
+				CHI = {
+					every_other_country = { #annex all non player southern warlords
+						limit = {
+							OR = {
+								tag = GXC
+								tag = YUN
+							}
+							is_ai = yes
+						}
+						CHI = {
+							annex_country = {
+								target = prev
+								transfer_troops = yes
+							}
+						}
+					}
+					#china starts with cores
+				}
+				PRC = {
+					every_other_country = { #annex all non player northern warlords
+						limit = {
+							OR = {
+								tag = SHX
+								tag = YUN
+								tag = XSM
+								tag = SIK
+							}
+							is_ai = yes
+						}
+						PRC = {
+							annex_country = {
+								target = prev
+								transfer_troops = yes
+							}
+						}
+					}
+					#communist china starts with cores
+				}
+			}
+
+			#merge luxemburg
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = foxhole_merge_luxemburg
+						option = ANNEX
+					}
+				}
+				BEL = {
+					every_other_country = { #annex non player luxemburg
+						limit = {
+							OR = {
+								tag = LUX
+							}
+							is_ai = yes
+						}
+						BEL = {
+							annex_country = {
+								target = prev
+								transfer_troops = yes
+							}
+						}
+					}
+
+					every_owned_state = { #core it all for ressources
+						add_core_of = BEL
+					}
+				}
+			}
+		}
+	}
+}
