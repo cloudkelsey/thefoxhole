@@ -68,6 +68,31 @@
  FOXHOLE_EASTER_EGG_ALLOW:0 "Enable"
  FOXHOLE_EASTER_EGG_ALLOW_DESC:0 "Enables easter egg generals and small features to make the game a bit more goofy."
 
+
+ FOXHOLE_GAME_RULES_NATION_MERGING:0 "Nation Merging"
+
+ FOXHOLE_MERGE_SOUTH_AMERICA:0 "Latin America"
+ FOXHOLE_MERGE_SOUTH_AMERICA_DEFAULT:0 "Default"
+ FOXHOLE_MERGE_SOUTH_AMERICA_COLUMBIA_ANNEX:0 "Merge"
+ FOXHOLE_MERGE_SOUTH_AMERICA_COLUMBIA_ANNEX_DESC:0 "Columbia annexes and cores all non player Latin American minors."
+
+ FOXHOLE_MERGE_ASIA:0 "Himalayas"
+ FOXHOLE_MERGE_ASIA_DEFAULT:0 "Default"
+ FOXHOLE_MERGE_ASIA_ANNEX:0 "Merge"
+ FOXHOLE_MERGE_ASIA_ANNEX_DESC:0 "Buthan annexes and cores Tibet and Nepal if they are AI."
+
+ FOXHOLE_MERGE_CHINA:0 "China"
+ FOXHOLE_MERGE_CHINA_DEFAULT:0 "Default"
+ FOXHOLE_MERGE_CHINA_ANNEX:0 "One China"
+ FOXHOLE_MERGE_CHINA_ANNEX_DESC:0 "Nationalist China annexes all non player warlords."
+ FOXHOLE_MERGE_DUAL_CHINA_ANNEX:0 "Two Chinas"
+ FOXHOLE_MERGE_DUAL_CHINA_ANNEX_DESC:0 "Nationalist China annexes southern non player warlords. Communist China annexes northern non player warlords."
+
+ FOXHOLE_MERGE_LUXEMBURG:0 "Benelux"
+ FOXHOLE_MERGE_LUXEMBURG_DEFAULT:0 "Default"
+ FOXHOLE_MERGE_LUXEMBURG_ANNEX:0 "No Luxemburg"
+ FOXHOLE_MERGE_LUXEMBURG_ANNEX_DESC:0 "Belgium annexes and cores Luxemburg if it is AI."
+
 #events
  foxhole_SOV_demands.0.t:0 "Soviet Ultimatum"
  foxhole_SOV_demands.0.d:0 "The Soviets are massing their troops outside our border and are demanding that we surrender their claims."
