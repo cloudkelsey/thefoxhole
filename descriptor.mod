@@ -5,6 +5,6 @@ tags={
 	"Technologies"
 }
 picture="thumbnail.png"
-name="The Foxhole Mod"
+name="The Foxhole Mod Reloaded"
 supported_version="1.10.7"
 remote_file_id="2268239599"
