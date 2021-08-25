@@ -33,3 +33,12 @@ foxhole_general_grinding_category = {
 	scripted_gui = foxhole_general_grinding_ui
 	priority = 1000
 }
+
+foxhole_scotland_forever_independence = {
+	visible = {
+		has_global_flag = foxhole_scotland_revolts
+		foxhole_scotland_forever_enabled = yes
+		tag = ENG
+	}
+	priority = 200
+}

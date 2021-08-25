@@ -1,0 +1,16 @@
+focus_tree = {
+	id = foxhole_scotland_forever_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SCO
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+}

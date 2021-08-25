@@ -4,3 +4,11 @@ foxhole_historical_mode = {
 		option = COMPETITIVE
 	}
 }
+
+foxhole_scotland_forever_enabled = {
+	foxhole_historical_mode = no
+	has_game_rule = {
+		rule = foxhole_easter_egg
+		option = EASTER_EGG_BLOCK
+	}
+}
