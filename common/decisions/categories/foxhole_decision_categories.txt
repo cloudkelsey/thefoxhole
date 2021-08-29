@@ -36,8 +36,8 @@ foxhole_general_grinding_category = {
 
 foxhole_scotland_forever = {
 	visible = {
-		foxhole_scotland_forever_enabled = yes
 		tag = SCO
+		foxhole_easter_eggs = yes
 	}
 	priority = 200
 }
