@@ -58,13 +58,46 @@ set_popularities = {
 	communism = 4
 }
 
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
+create_country_leader = {
+	name = "Reececr01"
+	picture = "Portrait_Britain_Reecer01.dds"
+	expire = "1999.1.1"
+	ideology = marxism
+	traits = {
+		foxhole_ruler_trait_bridge_goblin
+		foxhole_ruler_trait_revolutionary_goblin
+	}
+}
+
+create_country_leader = {
+	name = "Reececr01"
+	picture = "Portrait_Britain_Reecer01.dds"
+	expire = "1999.1.1"
+	ideology = liberalism
+	traits = {
+		foxhole_ruler_trait_bridge_goblin
+		foxhole_ruler_trait_liberator_goblin
+	}
+}
+
+create_country_leader = {
+	name = "Reececr01"
+	picture = "Portrait_Britain_Reecer01.dds"
+	expire = "1999.1.1"
+	ideology = fascism_ideology
+	traits = {
+		foxhole_ruler_trait_bridge_goblin
+		foxhole_ruler_trait_dictator_goblin
+	}
+}
+
+create_country_leader = {
+	name = "Reececr01"
+	picture = "Portrait_Britain_Reecer01.dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		foxhole_ruler_trait_bridge_goblin
+		foxhole_ruler_trait_king_goblin
+	}
+}
