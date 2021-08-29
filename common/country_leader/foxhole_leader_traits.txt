@@ -1,0 +1,36 @@
+leader_traits = {
+	foxhole_ruler_trait_bridge_goblin = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	foxhole_ruler_trait_revolutionary_goblin = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	foxhole_ruler_trait_liberator_goblin = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	foxhole_ruler_trait_dictator_goblin = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	foxhole_ruler_trait_king_goblin = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
