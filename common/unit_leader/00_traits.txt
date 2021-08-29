@@ -259,6 +259,7 @@ leader_traits = {
 	}
 
 	bridge_goblin = {
+		random = no
 		type = land
 		trait_type = personality_trait
 		enable_ability = makeshift_bridges
