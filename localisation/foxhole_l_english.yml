@@ -122,6 +122,11 @@
 
  improved_worker_conditions_cooldown:0 "Improved Worker Conditions Cooldown"
 
+ foxhole_scotland_forever:0 "SCOTLAND FOREVER !!!"
+
+ foxhole_scotland_forever_integrate_celtic_land:0 "Integrate [From.GetName]"
+ foxhole_scotland_forever_supreme:0 "SCOTLAND FOREVER !!!"
+
 #ideas
  FIN_enhanced_sisu:0 "Enhanced Sisu"
  AI_control:0 "AI Control"
@@ -146,6 +151,13 @@
 #traits
  bridge_goblin:0 "Bridge Goblin"
  bridge_goblin_desc:0 "§GLiving under the bridge so long has turned Reecer01 into what some would call an expert of the bridge pattern, with careful planning and consideration. This Goblin will be able to turn the bridge into a divisions worse nightmare when it comes to crossing§G §RBE WARNED, YOUR ANKLES ARE NOT SAFE§R"
+
+ foxhole_ruler_trait_bridge_goblin:0 "Bridge Goblin"
+ foxhole_ruler_trait_revolutionary_goblin:0 "Revolutionary Goblin"
+ foxhole_ruler_trait_liberator_goblin:0 "Liberator of the Goblins"
+ foxhole_ruler_trait_dictator_goblin:0 "Goblin Dicator"
+ foxhole_ruler_trait_king_goblin:0 "King of the Goblins"
+ foxhole_scotland_forever_supreme_trait:0 "SCOTLAND FOREVER !!!"
 
 #interface
  gui_training_general_name:0 "[This.foxhole_selected_general.attack_level]" #TODO
