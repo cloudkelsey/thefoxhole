@@ -5,10 +5,9 @@ foxhole_historical_mode = {
 	}
 }
 
-foxhole_scotland_forever_enabled = {
-	foxhole_historical_mode = no
+foxhole_easter_eggs = {
 	has_game_rule = {
 		rule = foxhole_easter_egg
-		option = EASTER_EGG_BLOCK
+		option = EASTER_EGG_ALLOW
 	}
 }
