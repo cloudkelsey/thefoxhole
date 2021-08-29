@@ -19,20 +19,79 @@ on_actions = {
 				#Reecer01EasterEgg
 				if = {
 					limit = {
-						has_game_rule = {
-							rule = foxhole_easter_egg
-							option = EASTER_EGG_ALLOW
-						}
+						foxhole_scotland_easter_eggs = yes
 					}
 					create_corps_commander = {
 						name = "Reecer01" #BridgeGoblin
 						portrait_path = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
-						traits = { media_personality bridge_goblin }
+						traits = { media_personality trait_engineer bridge_goblin }
 						skill = 5
 						attack_skill = 3
 						defense_skill = 4
 						planning_skill = 2
 						logistics_skill = 5
+					}
+				}
+			}
+			SCO = {
+				#Reecer01EasterEgg
+				if = {
+					limit = {
+						foxhole_scotland_easter_eggs = yes
+					}
+					create_corps_commander = {
+						name = "Reecer01" #BridgeGoblin
+						portrait_path = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
+						traits = { media_personality trait_engineer bridge_goblin }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 5
+						planning_skill = 3
+						logistics_skill = 5
+					}
+
+					create_country_leader = {
+						name = "Reececr01"
+						picture = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
+						expire = "1999.1.1"
+						ideology = marxism
+						traits = {
+							foxhole_ruler_trait_bridge_goblin
+							foxhole_ruler_trait_revolutionary_goblin
+						}
+					}
+
+					create_country_leader = {
+						name = "Reececr01"
+						picture = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
+						expire = "1999.1.1"
+						ideology = liberalism
+						traits = {
+							foxhole_ruler_trait_bridge_goblin
+							foxhole_ruler_trait_liberator_goblin
+						}
+					}
+
+					create_country_leader = {
+						name = "Reececr01"
+						picture = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
+						expire = "1999.1.1"
+						ideology = fascism_ideology
+						traits = {
+							foxhole_ruler_trait_bridge_goblin
+							foxhole_ruler_trait_dictator_goblin
+						}
+					}
+
+					create_country_leader = {
+						name = "Reececr01"
+						picture = "gfx/Leaders/ENG/Portrait_Britain_Reecer01.dds"
+						expire = "1999.1.1"
+						ideology = despotism
+						traits = {
+							foxhole_ruler_trait_bridge_goblin
+							foxhole_ruler_trait_king_goblin
+						}
 					}
 				}
 			}
