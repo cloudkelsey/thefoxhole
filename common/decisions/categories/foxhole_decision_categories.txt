@@ -34,11 +34,10 @@ foxhole_general_grinding_category = {
 	priority = 1000
 }
 
-foxhole_scotland_forever_independence = {
+foxhole_scotland_forever = {
 	visible = {
-		has_global_flag = foxhole_scotland_revolts
 		foxhole_scotland_forever_enabled = yes
-		tag = ENG
+		tag = SCO
 	}
 	priority = 200
 }
