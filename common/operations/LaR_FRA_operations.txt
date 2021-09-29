@@ -8,6 +8,9 @@ FRA_instigate_workers_revolution_britain = { ### 1/25
 
 	allowed = {
 		original_tag = FRA
+		ENG = {
+			is_ai = yes
+		}
 	}
 	available = { 
 		ENG = {
@@ -164,6 +167,9 @@ FRA_instigate_workers_revolution_italy = { ### 1/25
 
 	allowed = {
 		original_tag = FRA
+		ITA = {
+			is_ai = yes
+		}
 	}
 	available = { 
 		has_completed_focus = FRA_carry_the_revolution_south
@@ -290,6 +296,9 @@ FRA_instigate_workers_revolution_spain = { ### 1/25
 
 	allowed = {
 		original_tag = FRA
+		SPR = {
+			is_ai = yes
+		}
 	}
 	available = { 
 		has_completed_focus = FRA_carry_the_revolution_west
@@ -415,6 +424,9 @@ FRA_instigate_workers_revolution_germany = { ### 1/25
 
 	allowed = {
 		original_tag = FRA
+		GER = {
+			is_ai = yes
+		}
 	}
 	available = { 
 		has_completed_focus = FRA_carry_the_revolution_east
