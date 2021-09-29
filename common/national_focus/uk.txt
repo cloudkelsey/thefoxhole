@@ -9697,8 +9697,29 @@ focus_tree = {
 		prerequisite = { focus = ENG_bring_the_dominions_back_into_the_fold }
 		available = {
 			is_subject = no
-			country_exists = USA
-			NOT = { is_in_faction_with = USA }
+			OR = {
+				AND = {
+					country_exists = USA
+					NOT = { is_in_faction_with = USA }
+				}
+				USA = {
+					is_subject_of = ENG
+				}
+				AND = { #don't lock focus if USA has already been annexed by Britain
+					NOT = {
+						country_exists = USA
+					}
+					any_state = {
+						is_core_of = USA
+						OR = {
+							is_owned_by = ENG
+							OWNER = {
+								is_subject_of = ENG
+							}
+						}
+					}
+				}
+			}
 		}
 		will_lead_to_war_with = USA
 		icon = GFX_focus_eng_unite_the_anglosphere
@@ -9725,10 +9746,19 @@ focus_tree = {
 				134 = { add_core_of = ENG }
 				135 = { add_core_of = ENG }
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = USA
-				expire = 0
+			if = { #don't give wargoal if USA has already been annexed
+				limit = {
+					country_exists = USA
+					NOT = { is_in_faction_with = USA }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = USA
+					expire = 0
+				}
+				else = { #compensation if already annexed
+					add_political_power = 50
+				}
 			}
 		}
 	}
