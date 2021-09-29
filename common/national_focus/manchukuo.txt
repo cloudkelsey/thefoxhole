@@ -1121,7 +1121,9 @@
 		}
 
 		bypass = {
-
+			MEN = {
+				exists = no
+			}
 		}
 
 		cancel_if_invalid = yes
